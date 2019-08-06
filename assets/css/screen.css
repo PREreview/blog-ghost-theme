@@ -112,9 +112,10 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    color: #000;
+    background: #fff no-repeat center center;
     background-size: cover;
+    border-bottom:1px solid #4b4949;
 }
 
 .site-header:before {
