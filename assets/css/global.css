@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
 /* Variables
 /* ---------------------------------------------------------- */
 
@@ -8,12 +10,136 @@
     --purple: #ad26b4;
     --yellow: #fcbd4c;
     --red: #ff3029;
-    --darkgrey: #15171A;
+    --darkgrey: #15171a;
     --midgrey: #738a94;
     --lightgrey: #c5d2d9;
     --whitegrey: #e5eff5;
     --pink: #fa3a57;
     --brown: #a3821a;
+
+    --xxsgrd: 4px;
+    --xsgrd: 8px;
+    --sgrd: 16px;
+    --mgrd: 24px;
+    --lgrd: 32px;
+    --xlgrd: 40px;
+    --xxlgrd: 56px;
+
+    /* Pre Review Colors */
+    --prereview-red: #ff3333;
+    --prereview-black: #000000;
+    --prereview-white: #ffffff;
+    --prereview-grey: #4b4949;
+    --prereview-blue: #197cf4;
+    --prereview-light-blue: #e4edf7;
+    --prereview-light-gold: #fffaee;
+    --prereview-gold: #fcbd4c;
+    --prereview-coral: #f77463;
+
+    --prereview-spring-green: #66f785;
+    --prereview-xxxlight-grey: #ebe9e9;
+    --prereview-xxlight-grey: #c1bfbf;
+    --prereview-xlight-grey: #a5a3a3;
+    --prereview-light-grey: #747272;
+    --unrich-black: #0b0b0b;
+
+    --ruling-color: var(--prereview-light-grey);
+
+    --basic-font-color: var(--unrich-black);
+    --basic-font-color--light: var(--prereview-light-grey);
+
+    /* standard button colors */
+    --button-background-color: transparent;
+    --button-foreground-color: var(--ui-basic-font-color);
+    --button-background-focus-color: var(--prereview-black);
+    --button-foreground-focus-color: var(--prereview-white);
+
+    /* primary-style button colors - these are buttons that need to stand out*/
+    --button-background-color--primary: var(--prereview-red);
+    --button-foreground-color--primary: var(--prereview-white);
+    --button-background-focus-color--primary: var(--prereview-black);
+    --button-foreground-focus-color--primary: var(--prereview-white);
+
+    --body-background-color: var(--prereview-light-blue);
+
+    /* Fonts */
+    --font-family: "Open Sans", "sans-serif";
+
+    --basic-font-size: 11pt;
+    --basic-line-height: 16pt;
+    --basic-bottom-margin: 12pt;
+    --basic-top-margin: 0;
+    --basic-font: 400 var(--basic-font-size) / var(--basic-line-height)
+        var(--font-family);
+
+    --basic-font-size--small: 10pt;
+    --basic-line-height--small: 16pt;
+    --basic-bottom-margin--small: 12pt;
+    --basic-top-margin--small: 0pt;
+    --basic-font--small: 400 var(--basic-font-size--small) /
+        var(--basic-line-height--small) var(--font-family);
+
+    --basic-font-size--large: 13pt;
+    --basic-line-height--large: 20pt;
+    --basic-bottom-margin--large: 12pt;
+    --basic-top-margin--large: 0pt;
+    --basic-font--large: 500 var(--basic-font-size--large) /
+        var(--basic-line-height--large) var(--font-family);
+
+    --short-text-line-height: 12pt;
+    --short-text-font: 500 var(--basic-font-size) /
+        var(--short-text-line-height) var(--font-family);
+
+    --short-text-line-height--large: 16pt;
+    --short-text-font--large: 500 var(--basic-font-size--large) /
+        var(--short-text-line-height--large) var(--font-family);
+
+    --header-menu-font-size: 16px;
+    --header-menu-line-height: 20px;
+    --header-menu-font: 400 var(--header-menu-font-size) /
+        var(--header-menu-line-height) var(--font-family);
+
+    --header-1-font-size: 24pt;
+    --header-1-line-height: 32pt;
+    --header-1-top-margin: 0pt;
+    --header-1-bottom-margin: 24pt;
+    --header-1-font: 600 var(--header-1-font-size) / var(--header-1-line-height)
+        var(--font-family);
+
+    --header-2-font-size: 20pt;
+    --header-2-line-height: 24pt;
+    --header-2-top-margin: 0pt;
+    --header-2-bottom-margin: 20pt;
+    --header-2-font: 500 var(--header-2-font-size) / var(--header-2-line-height)
+        var(--font-family);
+
+    --header-3-font-size: 16pt;
+    --header-3-line-height: 20pt;
+    --header-3-top-margin: 0pt;
+    --header-3-bottom-margin: 16pt;
+    --header-3-font: 500 var(--header-3-font-size) / var(--header-3-line-height)
+        var(--font-family);
+
+    --header-4-font-size: 14pt;
+    --header-4-line-height: 20pt;
+    --header-4-top-margin: 0pt;
+    --header-4-bottom-margin: 10pt;
+    --header-4-font: 500 var(--header-4-font-size) / var(--header-4-line-height)
+        var(--font-family);
+
+    --header-5-font-size: 11pt;
+    --header-5-line-height: 16pt;
+    --header-5-top-margin: 0pt;
+    --header-5-bottom-margin: 4pt;
+    --header-5-font: 600 var(--header-5-font-size) / var(--header-5-line-height)
+        var(--font-family);
+
+    --display-1-font-size: 32pt;
+    --display-1-line-height: 40pt;
+    --display-1-top-margin: 20pt;
+    --display-1-bottom-margin: 20pt;
+    --display-1-font: 300 var(--display-1-font-size) /
+        var(--display-1-line-height) var(--font-family);
 }
 
 /* Reset
@@ -105,6 +231,8 @@ video {
 }
 body {
     line-height: 1;
+    font-family: "Open Sans", "sans-serif";
+    color: red;
 }
 ol,
 ul {
@@ -281,7 +409,7 @@ html {
 body {
     overflow-x: hidden;
     color: #000;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -337,7 +465,13 @@ dl,
 blockquote {
     margin: 0 0 1.5em 0;
 }
-
+p:empty,
+ul:empty,
+ol:empty,
+dl:empty,
+blockquote:empty {
+    margin: 0;
+}
 ol,
 ul {
     padding-left: 1.3em;
@@ -437,50 +571,30 @@ h6 {
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 5rem;
-    font-weight: 700;
-}
-@media (max-width: 500px) {
-    h1 {
-        font-size: 2.2rem;
-    }
+    font: var(--header-1-font);
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 2rem;
-}
-@media (max-width: 500px) {
-    h2 {
-        font-size: 1.8rem;
-    }
+    font: var(--header-2-font);
 }
 
 h3 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-@media (max-width: 500px) {
-    h3 {
-        font-size: 1.7rem;
-    }
+    font: var(--header-3-font);
 }
 
 h4 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.6rem;
-    font-weight: 500;
+    font: var(--header-4-font);
 }
 
 h5 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font: var(--header-5-font);
 }
 
 h6 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font: var(--header-6-font);
 }

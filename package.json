@@ -1,7 +1,6 @@
 {
-    "name": "casper-prereview",
-    "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
-    "demo": "https://demo.ghost.io",
+    "name": "prereview-ghost-theme",
+    "description": "TThe PREreview ghost theme",
     "version": "2.10.6-pr1",
     "engines": {
         "ghost": ">=2.0.0",

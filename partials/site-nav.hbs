@@ -1,18 +1,16 @@
 <nav class="site-nav">
     <div class="site-nav-left">
-        {{^is "home"}}
-            {{#if @site.logo}}
-                <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
-            {{else}}
-                <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
-            {{/if}}
-        {{/is}}
-        {{#if @site.navigation}}
-            {{navigation}}
-        {{/if}}
+
+        <a class="site-nav-logo" href="https://www.prereview.org"><img src="{{asset "prereview-logo.svg"}}"
+                alt="{{@site.title}}" /></a>
+
+
     </div>
     <div class="site-nav-right">
-        <div class="social-links">
+        {{#if @site.navigation}}
+        {{navigation}}
+        {{/if}}
+        <!--<div class="social-links">
             {{#if @site.facebook}}
                 <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
             {{/if}}
@@ -24,6 +22,6 @@
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
         {{else}}
             <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-        {{/if}}
+        {{/if}}-->
     </div>
 </nav>
