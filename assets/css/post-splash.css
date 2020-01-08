@@ -1,5 +1,5 @@
 .post-splash {
-    height: 85vh;
+    height: calc(85vh - 80px);
 
     display: flex;
     flex-direction: column;
@@ -29,12 +29,16 @@
 
 .post-splash__header {
     padding: var(--mgrd);
+
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 1170px) {
     .post-splash {
         padding: 5vw 7vw;
+    }
+    .post-splash__header {
+        padding: var(--mgrd);
     }
 }
 .post-splash__header__title {

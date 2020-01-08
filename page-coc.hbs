@@ -12,7 +12,8 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-<main id="site-main" class="site-main site-main--with-toc outer outer--with-toc site-main--with-splash-image">
+<main id="site-main"
+  class="site-main site-main--with-toc outer outer--with-toc  {{#if feature_image}}site-main--with-splash-image{{/if}}">
   <div class="inner">
 
     <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">

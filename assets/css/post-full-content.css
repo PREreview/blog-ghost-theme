@@ -1,7 +1,7 @@
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 64px 80px 0;
+    padding: 64px 80px;
     min-height: 230px;
 
     font: var(--basic-font);
@@ -48,10 +48,11 @@
     transform: rotate(5deg);
 }
 */
-.site-main--with-splash-image {
+.site-main--with-splash-image .post-full-content {
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
 }
 .no-image .post-full-content {
-    padding-top: var(--lgrd);
+    padding-top: var(--xxlgrd);
 }
 
 .no-image .post-full-content:before,
@@ -271,6 +272,12 @@ Usage (In Ghost editor):
 @media (max-width: 500px) {
     .post-full-content h2 {
     }
+}
+
+/* the first h2 (appears after the toc in the markup */
+.post-full-content .page-toc + h2 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .post-full-content h3 {

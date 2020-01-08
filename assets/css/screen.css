@@ -37,6 +37,7 @@ production stylesheet in assets/built/screen.css
 
 body {
     background: color(var(--body-background-color) l(+5));
+    font: var(--basic-font);
 }
 
 .img {
@@ -168,6 +169,7 @@ body {
     box-shadow: rgba(39, 44, 49, 0.06) 8px 14px 38px,
         rgba(39, 44, 49, 0.03) 1px 3px 8px;
     transition: all 0.5s ease;
+    font: var(--basic-font);
 }
 
 .post-card:hover {
@@ -223,10 +225,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font: var(--basic-font);
 }
 
 .post-card-excerpt {
-    font-family: Georgia, serif;
+    font: var(--basic-font);
 }
 
 .post-card-meta {
@@ -1697,6 +1700,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding-bottom: 60px;
     color: #fff;
     background: color(var(--darkgrey) l(-15%));
+    z-index: 100;
 }
 
 .site-footer-content {
