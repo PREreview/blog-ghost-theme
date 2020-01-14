@@ -1,10 +1,20 @@
-# Casper
+# PREreview Ghost Theme
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+This is the PREreview [Ghost](http://github.com/tryghost/ghost/) theme. It is based on the the default ghost deelopment theme.
 
-&nbsp;
+The customized theme contains 3 page templates the correspond the PREreview's static content pages:
 
-![screenshot-desktop](https://user-images.githubusercontent.com/120485/27221326-1e31d326-5280-11e7-866d-82d550a7683b.jpg)
+1. About: `page-about.hbs`
+2. Code of Conduct: `page-coc.hbs`
+3. Resources: `page-resources.hbs`
+
+In order for Ghost to hook into these templates, the page url slugs must match the page file name. For exaple the about page must have the slug `/about`, the Code of Conduct page must use the slug `/coc`, etc.
+
+Each of these pages includes a sidebar Table of Contents. Any `h2` header on the page will be automatically added to the TOC.
+
+## A Note on Social Media Links
+
+At the time of development, Ghost only supports social media CMS fields for Twitter and Facebook accounts. For this reason, the PREreview social media URLS are hard-wired into the `default.hbs` template file.
 
 &nbsp;
 
@@ -16,19 +26,18 @@ We've documented our default theme pretty heavily so that it should be fairly ea
 
 **The main files are:**
 
-- `default.hbs` - The main template file
-- `index.hbs` - Used for the home page
-- `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
+-   `default.hbs` - The main template file
+-   `index.hbs` - Used for the home page
+-   `post.hbs` - Used for individual posts
+-   `page.hbs` - Used for individual pages
+-   `tag.hbs` - Used for tag archives
+-   `author.hbs` - Used for author archives
 
 One really neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
 
-- `page-about.hbs` - Custom template for the `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
-
+-   `page-about.hbs` - Custom template for the `/about/` page
+-   `tag-news.hbs` - Custom template for `/tag/news/` archive
+-   `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 # Development
 
@@ -49,17 +58,15 @@ $ yarn zip
 
 # PostCSS Features Used
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
-
+-   Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+-   Variables - Simple pure CSS variables
+-   [Color Function](https://github.com/postcss/postcss-color-function)
 
 # SVG Icons
 
 Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
-
 
 # Copyright & License
 

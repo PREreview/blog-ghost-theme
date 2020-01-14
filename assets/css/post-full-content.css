@@ -168,7 +168,9 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    border-left: var(--prereview-blue) 3px solid;
+    font: var(--basic-font--large);
+    color: var(--basic-font-color--light);
 }
 
 .post-full-content blockquote p {

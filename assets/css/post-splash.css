@@ -33,7 +33,7 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1300px) {
     .post-splash {
         padding: 5vw 7vw;
     }
