@@ -2,15 +2,15 @@
 
 This is the PREreview [Ghost](http://github.com/tryghost/ghost/) theme. It is based on the the default ghost development theme.
 
-The customized theme contains 3 page templates the correspond the PREreview's static content pages:
+The customized theme contains 3 page templates that correspond the PREreview's static content pages:
 
 1. About: `page-about.hbs`
 2. Code of Conduct: `page-coc.hbs`
 3. Resources: `page-resources.hbs`
 
-In order for Ghost to hook into these templates, the page url slugs must match the page file name. For exaple the about page must have the slug `/about`, the Code of Conduct page must use the slug `/coc`, etc.
+In order for Ghost to hook into these templates, the page url slugs must match the page file name. For example the about page must have the slug `/about`, the Code of Conduct page must use the slug `/coc`, etc.
 
-Each of these pages includes a sidebar Table of Contents. Any `h2` header on the page will be automatically added to the TOC.
+Each of these pages include a sidebar Table of Contents. Any `h2` header on the page will be automatically added to the TOC.
 
 ## A Note on Social Media Links
 
