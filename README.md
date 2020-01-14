@@ -1,6 +1,6 @@
 # PREreview Ghost Theme
 
-This is the PREreview [Ghost](http://github.com/tryghost/ghost/) theme. It is based on the the default ghost deelopment theme.
+This is the PREreview [Ghost](http://github.com/tryghost/ghost/) theme. It is based on the the default ghost development theme.
 
 The customized theme contains 3 page templates the correspond the PREreview's static content pages:
 
